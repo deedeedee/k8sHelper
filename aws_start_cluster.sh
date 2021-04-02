@@ -141,7 +141,7 @@ echo $'API_SERVER=$API_SERVER\nTOKEN_FOR_SERVICE_ACCOUNT=$TOKEN_FOR_SERVICE_ACCO
 # test: to call K8s API server; you need server URL for API-server, TOKEN and certificate
 #
 
-curl $APISERVER/api --header "Authorization: Bearer $TOKEN_FOR_SERVICE_ACCOUNT" --cacert '/tmp/ca.crt'
+curl $API_SERVER/api --header "Authorization: Bearer $TOKEN_FOR_SERVICE_ACCOUNT" --cacert '/tmp/ca.crt'
 
 
 
